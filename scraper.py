@@ -125,16 +125,6 @@ def findPrice(product):
         var = 7
 
 
-    
-    
-    
-    #nameResult = soupSearch.find(class_= 'a-size-medium s-inline s-access-title a-text-normal')
-    #print("Name: " + nameResult.contents[0])
-    #preis1 = str(firstResult.contents[1].contents[0]).strip().replace(",",".")
-    #currency = re.findall("[A-z]+",preis1)
-    #print("Currency: " + currency[0])
-    #price = re.findall("([0-9]+(?:\.[0-9]+){0,1})",preis1)
-    #print("Preis: " + price[0])
     return Product(product[0], product[1], name, price, currency, var, url)
 
 def findProduct(ean):
@@ -179,12 +169,7 @@ def findEan(ean):
     
 
     return rueckgabe
-    #return [providerList[0].products[0],providerList[1].products[0],providerList[2].products[0]]
 
-#EAN
-#Scanner: 4960999667454
-#Edding: 4004764013753
-#Fritz: 4260107220015
 if __name__ == '__main__':
     findProduct("4260107220015")
 
